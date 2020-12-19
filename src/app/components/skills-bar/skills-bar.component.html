@@ -11,14 +11,6 @@
     <div class="name">Python</div>
   </div>
   <div class="skill">
-    <div class="dot skill-java"></div>
-    <div class="name">Java</div>
-  </div>
-  <div class="skill">
-    <div class="dot skill-ruby"></div>
-    <div class="name">Ruby</div>
-  </div>
-  <div class="skill">
     <div class="dot skill-database"></div>
     <div class="name">Databases</div>
   </div>
@@ -39,12 +31,12 @@
 </div>
 <div id="skills-tags">
   <div class="skill-tags">
-    <button md-button class="skill-all md-raised" (click)="skillFilter('all')">
-      All <span class="skill-num">{{(projects | async)?.length}}</span>
+    <button class="skill-all" (click)="skillFilter('all')">
+      All <span class="skill-num">{{projects?.length}}</span>
     </button>
-    <button md-button
-            *ngFor="let skill of skills | async"
-            [class]="'md-raised skill-' + skill.title.toLowerCase()"
+    <button
+            *ngFor="let skill of skills"
+            [class]="'skill-' + skill.title.toLowerCase()"
             (click)="skillFilter(skill.title)">{{skill.title}} <span class="skill-num">{{skill.count}}</span>
     </button>
   </div>

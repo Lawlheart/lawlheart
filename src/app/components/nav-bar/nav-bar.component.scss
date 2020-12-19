@@ -5,7 +5,7 @@ header {
   nav {
     .title-block {
       background: linear-gradient(transparent, $primary-color),
-      $bg-color url('/../../img/code.jpg') no-repeat fixed center;
+      $bg-color url('/assets/img/code.jpg') no-repeat fixed center;
       background-size: cover;
       height: 140px;
       h1 {

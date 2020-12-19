@@ -9,11 +9,12 @@ import { Project } from '../../models/project.model';
 export class PortfolioCardComponent implements OnInit {
   @Input() project: Project;
   @Output() skillFilterEvent = new EventEmitter();
-  limitNum: number = 8;
+  limitNum = 8;
 
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.project);
 
   }
 

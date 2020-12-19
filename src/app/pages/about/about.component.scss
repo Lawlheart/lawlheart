@@ -1,0 +1,60 @@
+@import '../../../styles/mixins';
+@import '../../../styles/variables';
+
+#about {
+  margin: 40px auto 0;
+  section {
+    min-height: 240px;
+    padding: 40px 0;
+    h1 {
+      color: #ccc;
+    }
+  }
+  #profile {
+    color: #ccc;
+    margin:40px auto 0;
+    max-width:800px;
+    text-align: center;
+    .profile-photo {
+      border-radius: 50%;
+      height:140px;
+      width:140px;
+    }
+    h1 {
+      font-size: 2em;
+      color: #34ad3c;
+    }
+    p {
+      font-size: 1.2em;
+    }
+  }
+  #education {
+    ul {
+      @include flexy();
+      color: #ddd;
+      max-width: 1300px;
+      margin: auto;
+      text-align: center;
+      font-size: 1.4em;
+      li {
+        @extend %tile;
+        width: 260px;
+        h2 {
+          font-size: 1.3em;
+        }
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+  #enjoys {
+    ul {
+      @include flexy();
+      color: #ddd;
+      li {
+        @extend %tile;
+      }
+    }
+  }
+}

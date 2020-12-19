@@ -1,8 +1,7 @@
-
-<mat-card class="portfolio-card" aria-label="" mat-whiteframe="8">
+<mat-card class="portfolio-card">
   <div class="card-content title-bar">
     <div class="title">
-      <h2>{{project.title}}</h2>
+      <h2>{{project?.title}}</h2>
     </div>
   </div>
   <div class="card-content skills-bar">
@@ -13,10 +12,10 @@
       <li class="over-8" *ngIf="project.skills.length > 8" (click)="showMore()"><span class="small">{{project.skills.length - 8}} more</span><i class="fa fa-caret-down"></i></li>
     </ul>
   </div>
-  <img [attr.src]="project.img" alt="{{project.title}} Thumbnail">
+  <img [attr.src]="'/assets/' + project.img" alt="{{project.title}} Thumbnail">
   <div class="card-content card-bottom">
     <p>{{project.description}}</p>
-    <button mat-button class="git-btn mat-raised" (click)="link(project.github)" mat-whiteframe="9">GitHub</button>
-    <button mat-button class="web-btn mat-raised" (click)="link(project.link)" mat-whiteframe="9">Website</button>
+    <button class="git-btn mat-raised" (click)="link(project.github)">GitHub</button>
+    <button class="web-btn mat-raised" (click)="link(project.link)">Website</button>
   </div>
 </mat-card>
