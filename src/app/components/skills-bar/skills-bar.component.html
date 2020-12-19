@@ -14,14 +14,6 @@
     <div class="dot skill-database"></div>
     <div class="name">Databases</div>
   </div>
-  <div class="skill">
-    <div class="dot skill-development"></div>
-    <div class="name">Development</div>
-  </div>
-  <div class="skill">
-    <div class="dot skill-design"></div>
-    <div class="name">Design</div>
-  </div>
   <div class="skill title" *ngIf="currentSkill !== 'all'">
     <div class="name"> Filter</div>
   </div>
@@ -32,12 +24,12 @@
 <div id="skills-tags">
   <div class="skill-tags">
     <button class="skill-all" (click)="skillFilter('all')">
-      All <span class="skill-num">{{projects?.length}}</span>
+      All
     </button>
     <button
             *ngFor="let skill of skills"
             [class]="'skill-' + skill.title.toLowerCase()"
-            (click)="skillFilter(skill.title)">{{skill.title}} <span class="skill-num">{{skill.count}}</span>
+            (click)="skillFilter(skill.title)">{{skill.title}}
     </button>
   </div>
 </div>

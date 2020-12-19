@@ -14,8 +14,6 @@ export class PortfolioCardComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.project);
-
   }
 
   link(linkurl): void {

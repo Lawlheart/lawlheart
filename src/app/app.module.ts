@@ -13,7 +13,7 @@ import {
   LogsComponent,
   AboutComponent
 } from './pages';
-import { LimitPipe, SkillCountPipe, SkillsFilterPipe } from './pipes';
+import { LimitPipe, SkillsFilterPipe } from './pipes';
 
 @NgModule({
   declarations: [
@@ -33,7 +33,6 @@ import { LimitPipe, SkillCountPipe, SkillsFilterPipe } from './pipes';
 
     // pipes
     LimitPipe,
-    SkillCountPipe,
     SkillsFilterPipe
   ],
   imports: [
