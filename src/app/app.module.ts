@@ -10,7 +10,7 @@ import { NavBarComponent, PortfolioCardComponent, SkillsBarComponent, SocialLink
 import {
   PortfolioComponent,
   AlgorithmsComponent,
-  LogsComponent,
+  ArticlesComponent,
   AboutComponent
 } from './pages';
 import { LimitPipe, SkillsFilterPipe } from './pipes';
@@ -28,12 +28,12 @@ import { LimitPipe, SkillsFilterPipe } from './pipes';
     // pages
     PortfolioComponent,
     AlgorithmsComponent,
-    LogsComponent,
+    ArticlesComponent,
     AboutComponent,
 
     // pipes
     LimitPipe,
-    SkillsFilterPipe
+    SkillsFilterPipe,
   ],
   imports: [
     AppRoutingModule,

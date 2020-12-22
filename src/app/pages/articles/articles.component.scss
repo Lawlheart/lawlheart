@@ -1,21 +1,21 @@
 @import '../../../styles/mixins';
 @import '../../../styles/variables';
 
-#logs {
+#articles {
   margin: 20px auto;
   width: 95%;
   max-width: 600px;
   .title {
     text-align: center;
   }
-  .log {
+  .article {
     border-bottom: 1px solid transparentize($base-font-color, 0.9);
     display: table;
     margin-bottom: $base-spacing;
     padding-bottom: 1em;
     width: 100%;
 
-    .log-content {
+    .article-content {
       width: 100%;
 
       h1 {
@@ -26,7 +26,7 @@
         line-height: 1.5em;
         margin-bottom: 0.5em;}
 
-      p.log-detail {
+      p.article-detail {
         color: transparentize($base-font-color, 0.5);
         font-size: 0.9em;
         font-style: italic;}

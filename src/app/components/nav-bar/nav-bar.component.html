@@ -7,10 +7,9 @@
       </div>
     </div>
     <mat-tab-group mat-stretch-tabs="always" (focusChange)="navigate($event)" [selectedIndex]="getRoute()">
-      <mat-tab label="PORTFOLIO"></mat-tab>
-      <mat-tab label="ALGORITHMS"></mat-tab>
-      <mat-tab label="LOGS"></mat-tab>
-      <mat-tab label="ABOUT"></mat-tab>
+      <div *ngFor="let link of navLinks">
+        <mat-tab label="{{link.label}}"></mat-tab>
+      </div>
     </mat-tab-group>
   </nav>
 </header>

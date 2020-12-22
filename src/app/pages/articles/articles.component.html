@@ -1,0 +1,10 @@
+<div id="articles">
+  <h1 class="title">Articles</h1>
+  <div class="article" *ngFor="let article of articles">
+    <div class="article-content">
+      <h1>{{article.date}}</h1>
+      <p [innerHTML]="article.text">{{article.text}}</p>
+      <p class="article-detail">by Lawliet</p>
+    </div>
+  </div>
+</div>

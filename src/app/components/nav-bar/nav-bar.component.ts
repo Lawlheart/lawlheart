@@ -10,7 +10,7 @@ export class NavBarComponent implements OnInit {
   navLinks = [
     { label: 'PORTFOLIO', link: ''},
     { label: 'ALGORITHMS', link: 'algorithms'},
-    { label: 'LOGS', link: 'logs'},
+    { label: 'ARTICLES', link: 'articles'},
     { label: 'ABOUT', link: 'about'}
   ];
   urlLinks: string[] = this.navLinks.map(nav => `/${nav.link}`);

@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import {
   PortfolioComponent,
   AlgorithmsComponent,
-  LogsComponent,
+  ArticlesComponent,
   AboutComponent
 } from './pages';
 
@@ -15,8 +15,8 @@ const routes: Routes = [{
   path: 'algorithms',
   component: AlgorithmsComponent
 }, {
-  path: 'logs',
-  component: LogsComponent
+  path: 'articles',
+  component: ArticlesComponent
 }, {
   path: 'about',
   component: AboutComponent
