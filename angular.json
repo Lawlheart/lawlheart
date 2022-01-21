@@ -127,5 +127,8 @@
     "@schematics/angular:component": {
       "styleext": "scss"
     }
+  },
+  "cli": {
+    "analytics": "6ce8cd58-bec1-4fc3-a80d-84735db14c66"
   }
 }
